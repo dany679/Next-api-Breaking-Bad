@@ -10,7 +10,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Wrapper } from './index.style';
 
-const Index = (props) => {
+export const Index = (props) => {
   const [name, setName] = useState('');
   const characters = props.data;
   console.log(props);
@@ -23,16 +23,6 @@ const Index = (props) => {
       <GlobalStyle />
       <Wrapper>
         <h1>Breaking Bad Api</h1>
-
-        {/* <Image
-        loader={myLoader}
-        width={1920}
-        height={400}
-        src={
-          'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.netzwelt.de%2Fdw1600_dh900_sw3840_sh2160_sx0_sy0_sr16x9_nu2%2Fpicture%2Foriginal%2F2020%2F10%2Fbreaking-bad-287648.jpeg&f=1&nofb=1'
-        }
-        alt='search icon'
-      /> */}
         <SearchBar setSearchTerm={setName} />
         <Grid header='actor' color={'#353535'}>
           {characters.map((character) => (
@@ -55,8 +45,6 @@ const Index = (props) => {
     </>
   );
 };
-
-export default Index;
 
 export const getServerSideProps = async ({ params, query }) => {
   console.log('DADOS');
