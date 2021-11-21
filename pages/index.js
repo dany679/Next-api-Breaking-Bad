@@ -10,7 +10,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Wrapper from './index.style';
 
-export const Index = (props) => {
+function Index(props) {
   const [name, setName] = useState('');
   const characters = props.data;
   console.log(props);
@@ -44,8 +44,7 @@ export const Index = (props) => {
       </Wrapper>
     </>
   );
-};
-
+}
 export const getServerSideProps = async ({ params, query }) => {
   // console.log('DADOS');
   // console.log(query.name, 'query name');
@@ -64,3 +63,4 @@ export const getServerSideProps = async ({ params, query }) => {
     props: { data: data },
   };
 };
+export default Index;
