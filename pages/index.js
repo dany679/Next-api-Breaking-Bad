@@ -47,8 +47,8 @@ export const Index = (props) => {
 };
 
 export const getServerSideProps = async ({ params, query }) => {
-  console.log('DADOS');
-  console.log(query.name, 'query name');
+  // console.log('DADOS');
+  // console.log(query.name, 'query name');
   const name = query.name ? query.name : '';
   const { data } = await Axios.get(
     `https://breakingbadapi.com/api/characters?name=${name}`,
