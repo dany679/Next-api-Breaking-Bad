@@ -5,7 +5,7 @@ import { BASE_URL } from '../api';
 import BreadCrumb from '../components/BreadCrumb/BreadCrumb';
 import MovieInfo from '../components/MovieInfo/MovieInfo';
 import { GlobalStyle } from '../GlobalStyle';
-import { Wrapper } from './index.style';
+import Wrapper from './index.style';
 // router is required for fallback: true
 const Post = ({ character }) => {
   const router = useRouter();
