@@ -36,30 +36,19 @@ const Index = (props) => {
         <SearchBar setSearchTerm={setName} />
         <Grid header='actor' color={'#353535'}>
           {characters.map((character) => (
-            <>
-              <ActorsBox
-                key={character?.char_id}
-                characterId={character?.char_id}
-                alt={character?.title}
-                name={character?.name}
-                nickname={character?.nickname}
-                occupation={character?.occupation}
-                seasons={character?.appearance}
-                seasonBcs={character?.better_call_saul_appearance}
-                live={character?.status}
-                clickable={character?.char_id ? true : false}
-                src={character?.img && `${character?.img}`}
-              ></ActorsBox>
-              {/* <Link
-              key={character.id}
-              href={{
-                pathname: '/[id]',
-                query: { id: character.id },
-              }}
-            >
-              <a> More Information</a>
-            </Link> */}
-            </>
+            <ActorsBox
+              key={character?.char_id}
+              characterId={character?.char_id}
+              alt={character?.title}
+              name={character?.name}
+              nickname={character?.nickname}
+              occupation={character?.occupation}
+              seasons={character?.appearance}
+              seasonBcs={character?.better_call_saul_appearance}
+              live={character?.status}
+              clickable={character?.char_id ? true : false}
+              src={character?.img && `${character?.img}`}
+            ></ActorsBox>
           ))}
         </Grid>
       </Wrapper>
