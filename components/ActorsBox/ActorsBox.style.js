@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Text = styled.div`
   margin-left: 4px;
+  color: 'white' !important;
 `;
 export const Wrapper = styled.div`
   a {
@@ -11,6 +12,8 @@ export const Wrapper = styled.div`
     margin: 0;
     width: 250px;
     height: 400px;
+    /* text-decoration: none !important; */
+    color: '#fff' !important;
   }
   :hover {
     transform: scale(1.05);
@@ -22,6 +25,7 @@ export const Wrapper = styled.div`
   /* a, */
   p {
     margin: 10px 0 0 0;
+    color: '#FFF' !important;
   }
   // padding-top: 10px;
   // border-radius: 13px;

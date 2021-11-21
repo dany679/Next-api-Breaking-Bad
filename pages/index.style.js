@@ -12,5 +12,8 @@ const Wrapper = styled.div`
     line-height: 50px;
     text-align: center;
   }
+  a {
+    color: white;
+  }
 `;
 export default Wrapper;

@@ -34,9 +34,9 @@ export const GlobalStyle = createGlobalStyle`
         font-size: var(--fontSmall);
         color: #1c1c1c var(--white);
     }
+
     a{
         text-decoration:none !important;
-        color: 'white' !important;
+        color:white !important;
     }
-
 `;
