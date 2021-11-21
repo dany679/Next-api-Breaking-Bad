@@ -8,7 +8,7 @@ import Thumb from '../components/Thumb/Thumb';
 import { GlobalStyle } from '../GlobalStyle';
 import { useState } from 'react';
 import Image from 'next/image';
-import { Wrapper } from './index.style';
+import Wrapper from './index.style';
 
 export const Index = (props) => {
   const [name, setName] = useState('');
