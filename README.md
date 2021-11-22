@@ -35,16 +35,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto sera um site , onde  pode procurar , verificar informações dos atores da series Breaking Bad.
 
-- [Site Inspiração](https://developers.themoviedb.org/)
+
 ## :memo: Licença
 
 
 
 
 obs: não tenho direito sobre nenhuma imagem 
-API usada foi o tmdb 
+API usada foi Breaking bad api
 
-- [tmdb](https://developers.themoviedb.org/)
+- [Api](https://www.breakingbadapi.com/api/)
 
 # :wrench: How To Run
 To run this app on your computer, run these commands inside the repository root folder
